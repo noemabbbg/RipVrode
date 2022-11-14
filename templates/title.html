@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Список комиксов{% endblock %}
+
+{% block content %}
+    {% for title in data.title %}
+
+        название и картинка (может еще что) и оформить по человечески.
+        <p>Возрастной рейтинг: {{title.pg }}</p>
+        <p>Год выхода: {{title.release }}</p>
+        <p>Стоимость: {{title.price }}</p>
+    {% empty %}
+        <li>Список пуст. </li>
+    {% endfor %}
+
+
+{% endblock %}
+{##}
+{#    {% for i in data.rooms %}#}
+{#        {% if idfor == i.hotel_id %}#}
+{#            <p>Категория: {{i.category }}</p>#}
+{#            <p>Тип кровати: {{i.bed_type }}</p>#}
+{#            <p>Стоимость в сутки: {{i.price }}</p>#}
+{#        {% endif %}#}
+{#    {% empty %}#}
+{#        <li>Номера распроданы </li>#}
+{#    {% endfor %}#}
+{#{% endblock %}#}

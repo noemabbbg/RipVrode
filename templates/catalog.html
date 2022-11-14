@@ -1,0 +1,12 @@
+<!doctype html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Товары{% endblock %}
+
+{% block content %}
+<div style="text-align: left; font-size:20px;">
+        <a href="{% url 'marvel_url' %}"> <p ><span style="color: #631505;">Марвел</span></p> </a>
+        <a href="{% url 'manga_url' %}"> <p ><span style="color: #631505;">Манга.</span></p> </a>
+        <a href="{% url 'hello_url' %}"> <p ><span style="color: #631505;">hello</span></p> </a>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}comics{% endblock %}
+
+{% block content %}
+<p_hello>Стартовая страничка</p_hello>
+<p_hepl><br> Пожалуйста, выберите нужный раздел</p_hepl>
+   <ul>
+       <li><a href="{% url 'genres_url' %}">Комиксы</a></li>
+        <li><a>Контакты</a></li>
+    </ul>
+    <img src="https://avatars.mds.yandex.net/get-altay/3932123/2a0000017531a88ad9cbdff811aa2665e6c8/XXL" height="500" >
+{% endblock %}

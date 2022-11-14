@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+    <title>PegasFly</title>
+</head>
+<body>
+    <p align="center">магазин комиксовввв -круто </p>
+    <p align="center">Сегодня {{ data.current_date }}, а это значит надо купить много комиксов </p>
+    <p align="center"><a href="main/">Полетели!</a></p>
+<ul>
+    {% for var in data.list %}
+        <li>Мы любим {{ var }}!</li>
+    {% endfor %}
+</ul>
+<img src="https://newviewtravel.ru/images/Blog/38133470_10155372048151906_63174712611569664_n.jpg" height="500" width="800" "" >
+</body>
+</html>

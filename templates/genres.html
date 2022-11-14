@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Список жанров{% endblock %}
+
+{% block content %}
+    {% for genre in data.genres %}
+         <li><a href="{% url 'genre_id_url'   genre.id %}">{{ genre.name }} </a>
+        <br> Название: {{ genre.name}}
+        <br> Количество комиксов: {{ genre.quantity }}</li>
+        <div><img src="{{ genre.image }}" height="150" ></div>
+    {% empty %}
+        <li>Список пуст. </li>
+    {% endfor %}
+
+{% endblock %}
